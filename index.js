@@ -76,10 +76,16 @@ app.post('/create-contact', (req, res) => {
 
 
 app.post('/delete-contact', (req, res) => {
-    let indx = req.body.deleteId;
-    console.log(req.body.deleteId);
-    contactList.splice(indx, 1);
-    return res.redirect('back');
+    // let indx = req.body.deleteId;
+    // console.log(req.body.deleteId);
+    Contact.findByIdAndDelete(req.body.deleteId, function (err) {
+        if (err){
+            console.log('Error in finding the selected id..', err)
+        }
+        else{
+            return res.redirect('back');
+        }
+    });
 });
 
 // SERVER LISTENER
