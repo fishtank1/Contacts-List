@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: grey;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+form div {
+    display: flex;
+    width: 200px;
+    margin: auto;
+    flex-direction: column;
+}
+
+input {
+    padding: 7px;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+input:first-child {
+    margin-bottom: 10px;
+}
+
+input:last-child {
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+li > button {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+li > button {
+    height: 50px;
+    margin: auto;
+}
+
+li {
+    display: flex;
+    color: white;
+    background-color: black;
+    padding-right: 15px;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
